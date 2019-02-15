@@ -1,4 +1,5 @@
 body {
-    background-color: rgb(50,225,225);
+    background-size: cover;
+    background: linear-gradient(rgb(50,200,200),rgb(0,255,255));
     font-family: arial;
 }
