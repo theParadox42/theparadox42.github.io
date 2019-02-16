@@ -1,4 +1,6 @@
 body {
+    width: 100%;
+    max-width: 100%;
     background-size: auto;
     background: linear-gradient(rgb(50,200,200),rgb(0,255,255));
     font-family: arial;
