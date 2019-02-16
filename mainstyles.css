@@ -6,5 +6,6 @@ body {
     padding: 20px;
     border: 5px solid rgb(200,220,255);
     background-repeat: no-repeat;
-    color: rgb(0,0,20);
+    color: rgb(0,0,50);
+    margin: 20px auto;
 }
