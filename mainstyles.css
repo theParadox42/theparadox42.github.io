@@ -3,9 +3,12 @@ body {
     font-family: arial;
     background-repeat: no-repeat;
     color: rgb(0,0,50);
-    /* border: 5px solid rgb(0,0,150);
-    width: 90%;
-    max-width: 1000px;
-    border-radius: 10px;
-    margin: 0 auto; */
+}
+
+
+a {
+    color: rgb(0,255,200);
+}
+a:visited {
+    color: rgb(0,200,255);
 }
