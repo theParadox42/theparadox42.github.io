@@ -4,8 +4,8 @@ body {
     background-repeat: no-repeat;
     color: rgb(0,0,50);
     width: 90%;
+    max-width: 800px;
     margin: 5px auto;
-
 }
 
 
