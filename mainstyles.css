@@ -1,15 +1,16 @@
 body {
-    background-color: rgb(245,248,250);
+    background-color: rgb(240,240,255);
     font-family: arial;
     background-repeat: no-repeat;
     color: rgb(0,0,50);
     width: 90%;
     margin: 5px auto;
+
 }
 
 
 a {
-    color: rgb(0,200,255);
+    color: rgb(0,180,220);
 }
 a:visited {
     color: #065471;
