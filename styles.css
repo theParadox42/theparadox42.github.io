@@ -1,7 +1,9 @@
 
-body {
+div {
     background-color: #065471;
     color: rgb(240,245,250);
+    max-width: 800px;
+    width: 90%;
 }
 ul {
     padding: 30px;
@@ -14,4 +16,9 @@ ul {
     max-width: 100%;
     margin: 0 auto;
     max-height: 500px;
+}
+body {
+    background: url("https://paradox42.tk/assets/images/mainbackground.png");
+    background-repeat: repeat;
+    width: 100%;
 }
