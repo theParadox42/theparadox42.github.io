@@ -7,10 +7,11 @@ body {
     color: rgb(240,245,250);
 }
 ul {
-    padding: 10px;
+    padding: 30px;
     background-color: white;
     border: 2px solid white;
     border-radius: 3px;
+    color: #065471;
 }
 #logo {
     max-width: 100%;
