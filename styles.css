@@ -35,8 +35,10 @@ nav {
 .nav {
     text-align: center;
     margin: 0 auto;
+    height: 100%;
 }
 #name {
+    height: 100%;
     color: white;
     font-size: 40px;
     float: left;
@@ -47,6 +49,7 @@ nav {
 #logo {
     width: 50px;
     height: 50px;
+    float: left;
 }
 header {
     height: 300px;
