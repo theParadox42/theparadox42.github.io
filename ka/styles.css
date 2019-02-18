@@ -2,10 +2,26 @@
 * {
     text-align: center;
 }
-
+body {
+    padding: 10px;
+}
+h1 {
+    font-size: 5.0em;
+}
 .projects {
-    padding: 20px;
+    padding: 50px;
     width: 400px;
     background-color: white;
+    background: linear-gradient(rgb(255,255,255),rgb(240,250,255));
     margin: 0 auto;
+    border-radius: 5px;
+}
+.project {
+    padding: 0px;
+    margin: 0px;
+    border: 10px solid lightgray;
+    background: white;
+    border-radius: 5px;
+    width: 400px;
+    height: 400px;
 }
