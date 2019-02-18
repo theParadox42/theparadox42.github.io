@@ -1,0 +1,11 @@
+
+* {
+    text-align: center;
+}
+
+.projects {
+    padding: 20px;
+    width: 400px;
+    background-color: white;
+    margin: 0 auto;
+}
