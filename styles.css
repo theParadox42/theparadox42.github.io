@@ -33,14 +33,16 @@ nav {
     padding: 10px;
 }
 .nav {
+    text-align: center;
     margin: 0 auto;
 }
 #name {
+    color: white;
     font-size: 40px;
     float: left;
     font-family: monospace;
     text-transform: Capitalize;
-    /* vertical-align: middle; */
+    vertical-align: middle;
 }
 #logo {
     width: 50px;
