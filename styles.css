@@ -2,6 +2,12 @@
     margin: 0;
     padding: 0;
 }
+a {
+    color: rgb(0,180,220);
+}
+a:visited {
+    color: #065471;
+}
 body {
     background-color: rgb(240,240,240);
     color: #065471;
@@ -24,13 +30,17 @@ ul {
 }
 nav {
     background-color: #065471;
+    padding: 10px;
+}
+.nav {
+    margin: 0 auto;
 }
 #name {
     font-size: 40px;
     float: left;
     font-family: monospace;
     text-transform: Capitalize;
-    vertical-align: middle;
+    /* vertical-align: middle; */
 }
 #logo {
     width: 50px;
