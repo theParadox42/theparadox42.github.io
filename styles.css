@@ -19,17 +19,17 @@ nav {
     background-color: #065471;
 }
 #name {
-    font-size: 20px;
+    font-size: 40px;
     float: left;
+    font-family: monospace;
+    text-transform: Capitalize;
 }
 #logo {
-    width: 20px;
-    height: 20px;
-    margin: 0 auto;
-    max-height: 500px;
+    width: 50px;
+    height: 50px;
 }
 header {
-    max-height: 300px;
+    height: 300px;
     background-color: black;
     width: 100%;
     background: url("https://images.pexels.com/photos/270360/pexels-photo-270360.jpeg?cs=srgb&dl=business-code-coding-270360.jpg&fm=jpg");
