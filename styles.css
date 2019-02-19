@@ -25,7 +25,7 @@ ul {
     padding: 5px 0 5px 30px;
     background-color: white;
     border: 2px solid white;
-    border-radius: 3px;
+    border-radius: 10px;
     line-height: 2;
 }
 nav {
@@ -40,7 +40,7 @@ nav {
 }
 #name {
     color: white;
-    font-size: 40px;
+    font-size: 50px;
     float: left;
     margin: auto 0;
     font-family: monospace;
@@ -52,9 +52,10 @@ nav {
     float: left;
 }
 header {
-    height: 300px;
+    height: 200px;
     background-color: black;
     width: 100%;
     background: url("https://images.pexels.com/photos/270360/pexels-photo-270360.jpeg?cs=srgb&dl=business-code-coding-270360.jpg&fm=jpg");
     background-size: cover;
+    background-repeat: no-repeat;
 }
