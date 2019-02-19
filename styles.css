@@ -43,8 +43,9 @@ nav {
     color: white;
     font-size: 40px;
     float: left;
+    margin: auto 0;
     font-family: monospace;
-    text-transform: Capitalize;
+    text-transform: capitalize;
     vertical-align: middle;
 }
 #logo {
