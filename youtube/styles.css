@@ -1,7 +1,22 @@
-div {
-    margin: 0 auto;
-    width: 600px;
-}
+
 * {
     text-align: center;
+}
+body {
+    width: 650px;
+
+}
+hr {
+    border: 2px solid rgb(50,100,150);
+    border-radius: 2px;
+}
+div {
+    margin: 0 auto;
+    width: 620px;
+}
+iframe {
+    float: left;
+    padding: 0;
+    margin: 10px;
+    border: 2px solid rgb(50,100,150);
 }
