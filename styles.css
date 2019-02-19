@@ -42,7 +42,7 @@ nav {
 }
 #name {
     color: white;
-    font-size: 46px;
+    font-size: 48px;
     float: left;
     margin: auto 0;
     font-family: 'ZCOOL QingKe HuangYou', monospace;
@@ -56,7 +56,7 @@ nav {
 }
 @media screen and (max-width: 600px) {
     #name {
-        font-size: 27px;
+        font-size: 28px;
     }
     #logo {
         width: 30px;
@@ -68,7 +68,7 @@ nav {
 }
 @media screen and (max-width: 380px) {
     #name {
-        font-size: 18px;
+        font-size: 19px;
     }
     #logo {
         width: 20px;
