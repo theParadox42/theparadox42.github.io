@@ -35,18 +35,16 @@ nav {
 }
 .nav {
     text-align: center;
-    margin: 0 auto;
-    height: 100%;
+    margin: auto auto;
+/*     height: 100%; */
 }
 #name {
-    height: 100%;
     color: white;
     font-size: 40px;
     float: left;
-    margin: auto 0;
+    /*margin: auto 0; */
     font-family: monospace;
     text-transform: capitalize;
-    vertical-align: middle;
 }
 #logo {
     width: 50px;
