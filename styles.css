@@ -42,7 +42,7 @@ nav {
     color: white;
     font-size: 40px;
     float: left;
-    /*margin: auto 0; */
+    margin: auto 0;
     font-family: monospace;
     text-transform: capitalize;
 }
