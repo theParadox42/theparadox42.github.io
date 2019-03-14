@@ -17,9 +17,6 @@ function setup() {
 	font = loadFont("coolfont.ttf");
 	textFont(font);
 	
-	Enemy.Create(width/50);
-	Player.Init(mouseX, mouseY,20,20,50,15);
-	
 	if(!highscore){
 		highscore = 0;
 	}

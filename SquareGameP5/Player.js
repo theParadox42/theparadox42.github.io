@@ -7,7 +7,7 @@ var Player = {
 	h: 25,
 	vx: 0,
 	vy: 0,
-	maxHealth: 100,
+	maxHealth: 20000,
 	health: 100,
 	maxSpeed: 10,
 	score: 0,
