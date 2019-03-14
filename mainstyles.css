@@ -11,7 +11,11 @@ body {
 
 a {
     color: rgb(0,180,220);
+    text-decoration: none;
 }
 a:visited {
     color: #065471;
+}
+a:hover {
+    text-decoration: underline;
 }
