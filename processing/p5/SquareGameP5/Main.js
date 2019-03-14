@@ -6,6 +6,10 @@ function mouseReleased(){
 	clicked = true;
 };
 
+function preload(){
+	font = loadFont("coolfont.ttf");
+}
+
 function setup() {
 	width = windowWidth;
 	height = windowHeight;
@@ -14,26 +18,29 @@ function setup() {
 	mouseY = height / 2;
 	colorMode(HSB, 360, 255, 255, 1);
 	angleMode(DEGREES);
-	font = loadFont("coolfont.ttf");
-	textFont(font);
-	
+	if(!font){
+		font = loadFont("coolfont.ttf");
+	} else {
+		textFont(font);
+	}
+
 	if(!highscore){
 		highscore = 0;
 	}
 }
 
 function draw() {
-	
-	
+
+
 	noStroke();
 	cursor('default');
 	textAlign(CENTER,TOP);
 	hue = map(sin(frameCount),-1,1,200,400) % 360;
-	
+
 	//For trails
 	fill(hue, 20, 255,0.2);
 	rect(0,0,width,height);
-	
+
 	switch(scene){
 		case "home":
 			home();
@@ -45,16 +52,6 @@ function draw() {
 			gameOver();
 		break;
 	}
-	
+
 	clicked = false;
 }
-
-
-
-
-
-
-
-
-
-
