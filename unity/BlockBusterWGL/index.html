@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <title>Paradox42 | Block Buster</title>
+    <link rel="shortcut icon" href="../../assets/images/icon.jpeg">
+    <link rel="stylesheet" href="TemplateData/style.css">
+    <link rel="stylesheet" href="../backbtnstyle.css">
+    <script src="TemplateData/UnityProgress.js"></script>
+    <script src="Build/UnityLoader.js"></script>
+    <script>
+      var gameInstance = UnityLoader.instantiate("gameContainer", "Build/BlockBusterWGL.json", {onProgress: UnityProgress});
+    </script>
+  </head>
+  <body>
+    <div class="webgl-content">
+      <div id="gameContainer" style="width: 960px; height: 600px"></div>
+      <div class="footer">
+        <div class="webgl-logo"></div>
+        <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
+        <div class="title">Block Buster</div>
+        <br>
+        <a href=".." id="backbtn">Back</a>
+        <br>
+        <br>
+      </div>
+    </div>
+  </body>
+</html>
