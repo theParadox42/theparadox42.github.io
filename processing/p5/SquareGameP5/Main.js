@@ -12,7 +12,7 @@ function preload(){
 
 function setup() {
 	width = windowWidth;
-	height = windowHeight;
+	height = windowHeight - 30;
 	createCanvas(width,height);
 	mouseX = width / 2;
 	mouseY = height / 2;
