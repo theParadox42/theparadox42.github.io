@@ -1,0 +1,24 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    background: #000;
+    /* position: fixed; */
+    /* height: 100%; */
+    overflow: hidden;
+}
+p {
+    padding-left: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-family: arial;
+    font-size: 15px;
+    height: 20px;
+}
+a {
+    color: rgb(0,160,200);
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
