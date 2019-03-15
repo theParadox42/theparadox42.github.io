@@ -12,8 +12,9 @@ function preload(){
 
 function setup() {
 	width = windowWidth;
-	height = windowHeight;
-	createCanvas(width,height);
+	height = windowHeight - 30;
+	let canvas = createCanvas(width,height);
+	canvas.parent('game');
 	mouseX = width / 2;
 	mouseY = height / 2;
 	colorMode(HSB, 360, 255, 255, 1);
