@@ -3,8 +3,6 @@
     padding: 0;
     margin: 0;
     background: #000;
-    /* position: fixed; */
-    /* height: 100%; */
     overflow: hidden;
 }
 p {
@@ -21,4 +19,10 @@ a {
 }
 a:hover {
     text-decoration: underline;
+}
+#gamecontainer{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
