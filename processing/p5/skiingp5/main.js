@@ -15,7 +15,7 @@ let scores = {
 	scores: {},
 	allTime: {
 		insane: 180,
-		hard: 128,
+		hard: 205,
 		medium: 307,
 		easy: 652,
 		soeasy: 710,
@@ -69,6 +69,7 @@ function draw() {
 			lose();
 		break;
 	}
+	print(mouseX);
 
 	resetInput();
 };
