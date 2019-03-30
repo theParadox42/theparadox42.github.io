@@ -22,6 +22,24 @@ let scores = {
 	},
 };
 
+function setLocalStorage(data){
+	for(let i in data){
+		localStorage[i] = data[i];
+	}
+};
+function getLocalStorage(){
+	if(!(localStorage.soeasy&&localStorage.easy&&localStorage.medium&&localStorage.hard&&localStorage.insane)){
+		setLocalStorage({
+			soeasy: 0,
+			easy: 0,
+			medium: 0,
+			hard: 0,
+			insane: 0,
+		});
+	}
+	return localStorage;
+};
+
 function preload(){
 	polarBearImg = loadImage('polarbear.png');
 	for(var i = 1; i <= 6; i ++){
@@ -31,6 +49,16 @@ function preload(){
 };
 
 function setup() {
+	scores["highscores"] = getLocalStorage();
+
+	for(var i in scores["highscores"]){
+		let value = scores["highscores"];
+		if(value){
+			print(value+","+i);
+		}
+	}
+
+
 	let canvas = createCanvas(1000,windowHeight);
 	canvas.parent('game');
 	frameRate(40);
@@ -69,7 +97,6 @@ function draw() {
 			lose();
 		break;
 	}
-	print(mouseX);
 
 	resetInput();
 };

@@ -1,5 +1,5 @@
 
-	
+
 function Skier(x,y,c){
 	this.x = x;
 	this.y = y;
@@ -34,7 +34,7 @@ Skier.prototype.input = function(){
 	}
 	if(keys[39]||keys.d){
 		r -= 5;
-	} 
+	}
 	if(keys[37]||keys.a){
 		r += 5;
 	}
@@ -42,13 +42,13 @@ Skier.prototype.input = function(){
 	this.rot = constrain(this.rot,-80,80);
 };
 Skier.prototype.update = function(){
-	
+
 	//Rotation stuff
 	let cosR = cos(this.rot);
 	let speedIncrease = cosR;
 	let vx = sin(this.rot)*speedIncrease;
 	let vy = cosR*speedIncrease*1.2;
-	
+
 	//Move stuff
 	this.vx*=0.9;
 	this.vy*=0.9;
@@ -58,20 +58,20 @@ Skier.prototype.update = function(){
 	this.speed = mag(this.vx,this.vy);
 	this.x+=this.vx;
 	this.y+=this.vy;
-	
+
 	while(this.y>this.scoreY){
 		this.scoreY+=this.scoreEvery*this.getVal("coin",1);
 		this.score++;
 	}
 	scores["scores"][difficulty] = this.score;
-	
+
 	//Trail stuff
 	objs.push(
 		new Trail(this.x,this.y-1,
 							this.x-this.vx,this.y-this.vy-1,
 							min(map(this.speed,0,2.5,this.w/2,this.w),this.w),color(255))
 	);
-	
+
 	if(this.getVal("giant",false)){
 		for(var i in this.default){
 			this[i] = this.default[i] * 2;
@@ -81,12 +81,12 @@ Skier.prototype.update = function(){
 			this[i] = this.default[i];
 		}
 	}
-	
+
 };
 Skier.prototype.runPUPs = function(){
 	for(var key in this.pups){
 		let pup = this.pups[key];
-		
+
 		pup.time --;
 		if(pup.time <= 0){
 			delete this.pups[key];
@@ -138,7 +138,7 @@ Skier.prototype.collide = function(arr){
 				obj.w *= 2;
 				obj.h *= 2;
 				obj.defR = void 0;
-			} 
+			}
 		}
 		if(this.checkCollide(obj)){
 			if(obj.obstacle){
@@ -146,6 +146,7 @@ Skier.prototype.collide = function(arr){
 					obj.remove = true;
 				} else {
 					scores["highscores"][difficulty] = max(this.score,(scores["highscores"][difficulty]||0));
+					setLocalStorage(scores["highscores"]);
 					scene = "lose";
 				}
 			} else if(obj.onCollision){
@@ -157,7 +158,7 @@ Skier.prototype.collide = function(arr){
 Skier.prototype.checkCollide = function(obj){
 	let distance = dist(this.x,this.y,obj.x,obj.y);
 	let collisionMin = this.r+obj.r;
-	if(distance<=collisionMin){
+	if(distance <= collisionMin){
 		return true;
 	}
 };
@@ -176,11 +177,3 @@ Skier.prototype.copy = function(){
 };
 
 var skier = new Skier(0,0,color(0,50,100));
-
-
-
-
-
-
-
-
