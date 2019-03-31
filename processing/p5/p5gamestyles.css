@@ -4,6 +4,7 @@
     margin: 0;
     background: #000;
     overflow: hidden;
+    position: absolute;
 }
 p {
     padding-left: 20px;
