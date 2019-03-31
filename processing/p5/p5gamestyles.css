@@ -4,7 +4,6 @@
     margin: 0;
     background: #000;
     overflow: hidden;
-    position: absolute;
 }
 p {
     padding-left: 20px;
@@ -26,4 +25,5 @@ a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: absolute;
 }
