@@ -21,6 +21,7 @@ a:hover {
     text-decoration: underline;
 }
 #gamecontainer{
+    width: 100%;
     margin: 0;
     display: flex;
     justify-content: center;
