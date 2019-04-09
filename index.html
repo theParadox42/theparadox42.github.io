@@ -10,22 +10,41 @@
     <meta name="keywords" content="Paradox Programming, Paradox42, Processing, P5.js, P5, Unity, Games, KA, Nathaniel Fargo">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
-    <link rel="shortcut icon" href="https://paradox42.tk/assets/images/icon.jpeg">
-    <link href="https://fonts.googleapis.com/css?family=ZCOOL+QingKe+HuangYou" rel="stylesheet">
-    <link rel="stylesheet" tyep="text/css" href="styles.css"><link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="shortcut icon" href="/assets/images/icon.jpeg">
+    <link href="/css/master.css">
   </head>
   <body>
-      <div>
-          <nav>
-              <div class="nav">
-                  <img id="logo" src="https://paradox42.tk/assets/images/icon.jpeg">
-                  <p id="name">Paradox Programming</p>
-              </div>
-          </nav>
-          <header>
-              <!--                <img id="coding-image" src="https://images.pexels.com/photos/270360/pexels-photo-270360.jpeg?cs=srgb&dl=business-code-coding-270360.jpg&fm=jpg"> -->
-          </header>
-          <div class="content">
+      <nav class="navbar navbar-expand-md navbar-dark bg-coolblue">
+          <a class="navbar-brand" href="https://paradox42.tk"><img src="/assets/icon.jpeg" class="img-fluid"> Paradox Programming</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarContent">
+              <ul class="navbar-nav mr-auto">
+                  <li class="nav-item active">
+                      <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Link</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Dropdown 
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="#">Action</a>
+                          <a class="dropdown-item" href="#">Another action</a>
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item" href="#">Something else here</a>
+                      </div>
+                  </li>
+              </ul>
+          </div>
+      </nav>
+      <header class="contianer-fluid">
+          <img class="img-fluid" src="https://images.pexels.com/photos/270360/pexels-photo-270360.jpeg?cs=srgb&dl=business-code-coding-270360.jpg&fm=jpg">
+      </header>
+      <div class="container">
           <h1>Welcome to my site</h1>
           <h3>What I'm up to</h3>
           <ul>
@@ -34,9 +53,8 @@
               <li><a href="processing">Processing Projects</a></li>
               <li> <a href="youtube">Youtube</a></li>
               <li><a href="https://github.com/theParadox42" target="_blank">Github Profile</a></li>
-              <li><a target="_blank" href="https://khanacademy.org/profile/theParadox42">Khan Academy Profile</a></li>
+              <li><a href="https://khanacademy.org/profile/theParadox42" target="_blank">Khan Academy Profile</a></li>
           </ul>
-          </div>
       </div>
   </body>
 </html>
