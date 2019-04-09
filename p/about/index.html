@@ -3,18 +3,52 @@
 <html>
     <head>
         <title>Paradox42 | About</title>
-        <link rel="stylesheet" type="text/css" href="../mainstyles.css">
-        <link rel="stylesheet" href="styles.css">
-        <link rel="shortcut icon" href="../assets/images/icon.jpeg">
+        <link rel="stylesheet" href="/css/master.css">
+        <link rel="shortcut icon" href="/assets/images/icon.png">
     </head>
     <body>
-        <div>
-            <h1>About</h1>
-            <h2>Me</h2>
-            <p>I'm a young developer who is learning app development, unity, and web development. I like playing the ukulele, coding, and learning.</p>
-            <h2>This Site</h2>
-            <p>I set up this site for free using freenom to get the domain, and netifly to control it from github. They are connected to eachother with using namesavers.</p>
-            <a href="..">Home</a>
-        </div>
+
+        <!-- Navbar -->
+        <nav class="navbar fixed-top navbar-expand-md navbar-dark bg-coolblue">
+            <a class="nav-item d-flex align-items-center" id="imgContainer" href="/">
+                <img src="/assets/images/brandlogo.png" class="d-none d-sm-block" id="brandIcon">
+            </a>
+            <a class="navbar-brand pl-2" href="/">Paradox Programming</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/p/about">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="games" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Games</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="/p/games/unity">Unity Games</a>
+                            <a class="dropdown-item" href="/p/games/javascript">Javascript Games</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/p/youtube">Youtube</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <header class="contianer-fluid">
+            <img class="img-fluid" src="/assets/images/coding-bg-2.jpg">
+        </header>
+
+        <section id="content">
+            <div class="container bg-white p-4 rounded">
+                <h1 class="ml-5">About Me</h1>
+                <p>I'm a young developer learning how to make apps, and websites. I know HTML, CSS, JS, C#, Swift, Processing, and probably more. Right now I am working through a web development course on unity. Follow me on <a href="https://github.com/theParadox42" target="_blank">github</a> or check out my projects on <a href="https://khanacademy.org/profile/theParadox42" target="_blank">Khan Academy</a></p>
+                <a href="/">Home</a>
+            </div>
+        </section>
     </body>
 </html>

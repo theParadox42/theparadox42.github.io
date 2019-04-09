@@ -8,6 +8,7 @@
 
 html, body {
     margin: 0;
+    margin-top: 2rem;
     padding: 0;
     height: 100%;
     padding-bottom: 1.25rem;
@@ -38,6 +39,9 @@ a, a:visited,
 .navbar {
     height: 4rem;
     font-family: 'ZCOOL QingKe HuangYou';
+}
+#content {
+    padding-top: 2rem;
 }
 #imgContainer {
     height: 100%;
