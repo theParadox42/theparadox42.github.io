@@ -1,22 +1,47 @@
+/* Bootstrap */
 @import url("https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css");
+/* Navbar Font, from Google Fonts */
 @import url("https://fonts.googleapis.com/css?family=ZCOOL+QingKe+HuangYou");
+/* Font Awesome */
+@import url("https://use.fontawesome.com/releases/v5.8.1/css/all.css");
 
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    padding-bottom: 1.25rem;
+    background-color: #f8f9fa;
+}
+header {
+    max-height: 300px;
+    height: 30%;
+    overflow: hidden;
+}
+footer {
+    height: 2.5rem;
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+}
 .bg-coolblue {
     background-color: #065471;
 }
+a, a:visited,
 .text-coolblue {
     color: #065471;
 }
-header {
-    height: 300px;
-    overflow: hidden;
+.navbar-brand, .navbar {
+    font-size: 2rem;
+    color: white;
+}
+.navbar {
+    height: 4rem;
+    font-family: 'ZCOOL QingKe HuangYou';
+}
+#imgContainer {
+    height: 100%;
 }
 #brandIcon {
-    height: 3rem;
-}
-
-.navbar, .navbar-brand {
-    height: auto;
-    font-family: 'ZCOOL QingKe HuangYou';
-    font-size: 2rem;
+    height: 75%;
 }
