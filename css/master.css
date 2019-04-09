@@ -1,8 +1,22 @@
 @import url("https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css");
+@import url("https://fonts.googleapis.com/css?family=ZCOOL+QingKe+HuangYou");
 
 .bg-coolblue {
     background-color: #065471;
 }
 .text-coolblue {
     color: #065471;
+}
+header {
+    height: 300px;
+    overflow: hidden;
+}
+#brandIcon {
+    height: 3rem;
+}
+
+.navbar, .navbar-brand {
+    height: auto;
+    font-family: 'ZCOOL QingKe HuangYou';
+    font-size: 2rem;
 }
