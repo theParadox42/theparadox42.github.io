@@ -8,9 +8,9 @@
 
 html, body {
     margin: 0;
-    margin-top: 2rem;
+    padding-top: 2rem;
     padding: 0;
-    min-height: 100%;
+    height: 100%;
     background-color: #f8f9fa;
 }
 header {
@@ -19,7 +19,7 @@ header {
     overflow: hidden;
 }
 footer {
-    height: 2.5rem;
+    height: 40px;
     bottom: 0;
     position: absolute;
     width: 100%;
@@ -32,19 +32,15 @@ a, a:visited,
     color: #065471;
 }
 .navbar-brand, .navbar {
-    font-size: 2rem;
     color: white;
 }
 .navbar {
-    height: 4rem;
     font-family: 'ZCOOL QingKe HuangYou';
 }
 #content {
     padding-top: 2rem;
 }
-#imgContainer {
-    height: 100%;
-}
 #brandIcon {
-    height: 75%;
+    height: 30px;
+    width: 30px;
 }
