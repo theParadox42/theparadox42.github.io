@@ -46,6 +46,10 @@ a, a:visited,
     height: 30px;
     width: 30px;
 }
-.img-full {
-    width: 100%;
+.unity-background {
+    background: url("/assets/images/unity.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    align-self: center;
+
 }
