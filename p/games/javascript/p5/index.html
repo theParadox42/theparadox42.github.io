@@ -1,12 +1,44 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
     <head>
-        <link rel="shortcut icon" href="../../assets/images/icon.jpeg">
-        <link rel="stylesheet" href="../../mainstyles.css">
+        <link rel="shortcut icon" href="/assets/images/icon.png">
+        <link rel="stylesheet" href="/css/master.css">
         <meta charset="utf-8">
         <title>Paradox42 | P5</title>
     </head>
     <body>
+         <!-- Navbar -->
+        <nav class="navbar fixed-top navbar-expand-md navbar-dark bg-coolblue">
+            <a class="navbar-brand pl-2" href="/">
+                <img src="/assets/images/brandlogo.png" width="30" height="30" class="d-none d-sm-inline-block align-top" id="brandIcon">
+                Paradox Programming
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/p/about">About</a>
+                    </li>
+                    <li class="nav-item dropdown active">
+                        <a class="nav-link dropdown-toggle" href="/p/games" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Games</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="/p/games/unity">Unity Games</a>
+                            <a class="dropdown-item" href="/p/games/javascript">Javascript Games</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/p/youtube">Youtube</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        
+        <div class="container pt-3 bg-light rounded">
         <h1>P5 Games</h1>
         <p>I have two p5 games, here they are.</p>
         <ul>
@@ -15,6 +47,7 @@
         </ul>
 
         <br>
-        <p>Go <a href="..">Back</a></p>
+        <p>Go <a href="..">Back</a> to javascript games</p>
+        </div>
     </body>
 </html>
