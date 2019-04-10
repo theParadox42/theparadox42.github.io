@@ -29,7 +29,7 @@ footer {
 .bg-coolblue {
     background-color: #065471;
 }
-a, a:visited,
+a, a:visited, a:hover,
 .text-coolblue {
     color: #065471;
 }
@@ -38,9 +38,6 @@ a, a:visited,
 }
 .navbar {
     font-family: 'ZCOOL QingKe HuangYou';
-}
-#content {
-    padding-top: 2rem;
 }
 #brandIcon {
     height: 30px;

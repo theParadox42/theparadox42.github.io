@@ -1,0 +1,13 @@
+a, a:visited, a:hover,
+.text-coolblue {
+    color: #0C9FD5;
+}
+body {
+    background-color: rgb(20,20,30);
+}
+.text-mediumlight {
+    color: rgb(200,200,210);
+}
+.bg-mediumdark {
+    background-color: rgb(50,50,60);
+}
