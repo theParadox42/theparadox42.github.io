@@ -12,10 +12,16 @@ function loadScript(url, callback) {
 
     // Fire the loading
     body.appendChild(script);
-}
+};
 function doneLoading(){
-    var $nav = $('nav');
-    $nav.load("/html-templates/navcontents.html"); 
+    var $nav = $('#navbar');
+    $nav.load("/html-templates/navcontents.html");
+    if(active){
+        console.log($("#"+active));
+        var $active = $("#"+active).addClass("active");
+        $active.addClass("active");
+        $active.children()
+    }
 };
 function loadBootstrap(){
     loadScript("/assets/libraries/bootstrap/js/bootstrap.min.js",doneLoading);
