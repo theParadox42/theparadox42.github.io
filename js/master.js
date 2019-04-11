@@ -14,7 +14,8 @@ function loadScript(url, callback) {
     body.appendChild(script);
 }
 function doneLoading(){
-    alert("JS has been added in!")
+    var $nav = $('nav');
+    $nav.load("/html-templates/navcontents.html"); 
 };
 function loadBootstrap(){
     loadScript("/assets/libraries/bootstrap/js/bootstrap.min.js",doneLoading);
