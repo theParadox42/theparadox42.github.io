@@ -13,7 +13,7 @@ html, body {
 }
 body {
     background-color: #f8f9fa;
-    padding-top: 40px;
+    padding-top: 50px;
 }
 header {
     max-height: 300px;
@@ -29,7 +29,7 @@ footer {
 .bg-coolblue {
     background-color: #065471;
 }
-a, a:visited,
+a, a:visited, a:hover,
 .text-coolblue {
     color: #065471;
 }
@@ -38,9 +38,6 @@ a, a:visited,
 }
 .navbar {
     font-family: 'ZCOOL QingKe HuangYou';
-}
-#content {
-    padding-top: 2rem;
 }
 #brandIcon {
     height: 30px;
