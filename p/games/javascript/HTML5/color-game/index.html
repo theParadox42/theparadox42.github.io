@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Paradox42 | Color Game</title>
+        <link rel="stylesheet" href="/css/master.css">
+        <link rel="stylesheet" href="game-styles.css">
+    </head>
+    <body>
+
+        <div id="navbar"></div>
+
+        <h1>
+            The Great
+            <br>
+            <span id="colorDisplay">RGB</span>
+            <br>
+            Guessing Game
+        </h1>
+
+        <div id="stripe">
+            <button id="reset">New Colors</button>
+            <span id="message"></span>
+            <button class="mode">Easy</button>
+            <button class="selected mode">Hard</button>
+        </div>
+
+        <div id="container">
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+        </div>
+
+        <script src="app.js" charset="utf-8"></script>
+
+        <!-- JS -->
+        <script>
+            var active = "games";
+        </script>
+        <script src="/js/master.js"></script>
+    </body>
+</html>
