@@ -1,24 +1,5 @@
 
-load();
 
-
-function load(){
-    loadScript("/assets/libraries/jquery-3.4.0.min.js", doneLoading);
-    loadScript("/assets/libraries/popper.min.js");
-    loadScript("/assets/libraries/bootstrap/js/bootstrap.min.js");
-
-};
-function doneLoading(){
-    var $nav = $('#navbar');
-    $nav.load("/html-templates/navcontents.html", function(){
-        $nav.css("height","0px");
-        if(active){
-            var $active = $('#' + active);
-            $active.addClass("active");
-            $active.children().append(' <span class="sr-only">(current)</span>');
-        }
-    });
-};
 function loadScript(url, callback) {
     // Adding the script tag to the head as suggested before
     var body = document.querySelector("body");
@@ -34,3 +15,22 @@ function loadScript(url, callback) {
     // Fire the loading
     body.appendChild(script);
 };
+function doneLoading(){
+    var $nav = $('#navbar');
+    $nav.load("/html-templates/navcontents.html", function(){
+        $nav.css("height","0px");
+        if(active){
+            var $active = $('#' + active);
+            $active.addClass("active");
+            $active.children().append(' <span class="sr-only">(current)</span>');
+        }
+    });
+};
+function load(){
+    loadScript("/assets/libraries/jquery-3.4.0.min.js", doneLoading);
+    loadScript("/assets/libraries/popper.min.js");
+    loadScript("/assets/libraries/bootstrap/js/bootstrap.min.js");
+
+};
+
+load();
