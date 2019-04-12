@@ -16,6 +16,7 @@ function loadScript(url, callback) {
 function doneLoading(){
     var $nav = $('#navbar');
     $nav.load("/html-templates/navcontents.html", function(){
+        $nav.css("height","0px")
         if(active){
             var $active = $('#' + active);
             $active.addClass("active");
