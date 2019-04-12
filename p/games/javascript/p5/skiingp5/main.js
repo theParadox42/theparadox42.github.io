@@ -18,7 +18,7 @@ let scores = {
 		hard: 426,
 		medium: 402,
 		easy: 652,
-		soeasy: 710,
+		soeasy: 1001,
 	},
 };
 
