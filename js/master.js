@@ -23,9 +23,6 @@ function doneLoading(){
             $active.children().append(' <span class="sr-only">(current)</span>');
         }
     });
-    if(testSecure){
-        testSecure();
-    }
 };
 function loadBootstrap(){
     loadScript("/assets/libraries/bootstrap/js/bootstrap.min.js",doneLoading);
