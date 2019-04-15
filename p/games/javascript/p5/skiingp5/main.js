@@ -15,7 +15,7 @@ let scores = {
 	scores: {},
 	allTime: {
 		insane: 316,
-		hard: 426,
+		hard: 625,
 		medium: 402,
 		easy: 652,
 		soeasy: 1001,
