@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="refresh" content="30">
+    <meta http-equiv="refresh" content="10">
     <title>Hydra</title>
     <style>
         * {
@@ -18,8 +18,10 @@
 </head>
 <body>
     <script>
-        window.open(".");
-        window.location.reload();
+        var thing = window.open("./hydra.html");
+        if(thing){
+            alert(thing);
+        }
     </script>
 </body>
 </html>
