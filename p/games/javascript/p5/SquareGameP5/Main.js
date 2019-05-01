@@ -1,4 +1,4 @@
-
+var allTimeHighscore = 14754;
 
 let width, height, font, hue = 300, scene = "home", clicked = false, highscore;
 
