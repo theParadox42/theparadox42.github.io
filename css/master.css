@@ -23,6 +23,7 @@ header {
 #navbar {
     position: fixed;
     height: 55px;
+    z-index: 1;
 }
 .bg-coolblue, #navbar {
     background-color: #065471!important;
@@ -43,4 +44,8 @@ a, a:visited, a:hover,
 }
 .no-bullets {
     list-style: none;
+}
+.game-card {
+    width: 40%;
+    margin: 5%;
 }
