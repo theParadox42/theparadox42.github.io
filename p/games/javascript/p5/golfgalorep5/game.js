@@ -10,7 +10,7 @@ function preload(){
 var height = window.height;
 var width = window.width;
 function setup(){
-	var canvas = createCanvas(windowWidth, windowHeight);
+	var canvas = createCanvas(windowWidth, windowHeight-30);
 	canvas.parent('game');
 	frameRate(50);
 	smooth();
@@ -539,7 +539,7 @@ var displayStrikes = function(){
 			fill(255, 255, 255);
 		}
 		push();
-		translate(0,height-20);
+		translate(0,height);
 		var s = 50;
 		var d = 20;
 		var c = 4/5;

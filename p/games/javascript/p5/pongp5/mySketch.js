@@ -21,7 +21,7 @@
 */
 var pauseImage;
 function setup(){
-	var canvas = createCanvas(windowWidth, windowHeight);
+	var canvas = createCanvas(windowWidth, windowHeight-30);
 	canvas.parent('game');
 	colorMode(HSB, 255, 255, 255, 255);
 	pauseImage = get();
@@ -313,7 +313,7 @@ var characters = [
     [1, 1, 1, 1,
      0, 0, 0, 1,
      0, 0, 1, 0,
-     0, 1, 0, 0, 
+     0, 1, 0, 0,
      1, 0, 0, 0,
      1, 0, 0, 0],
     [0, 1, 1, 0,
@@ -336,7 +336,7 @@ var characters = [
      0, 1, 1, 0],
     [0, 1, 0, 0,
      0, 1, 0, 0,
-     0, 1, 0, 0, 
+     0, 1, 0, 0,
      0, 1, 0, 0,
      0, 0, 0, 0,
      0, 1, 0, 0],
@@ -491,7 +491,7 @@ var ball = {
                         var change = abs((this.x+this.w*m/2)-room.w/2);
                         g.yrect(this.x-change/2,room.h/2,this.z,this.w*m-change,this.d*m);
                         g.yrect(this.x-change/2,-room.h/2,this.z,this.w*m-change,this.d*m);
-                        
+
                     }
                 } else {
                     g.yrect(this.x,room.h/2,this.z,this.w*m,this.d*m);
@@ -506,7 +506,7 @@ var ball = {
                         var change = abs((this.y+this.h*m/2)-room.h/2);
                         g.xrect(-room.w/2,this.y-change/2,this.z,this.h*m-change,this.d*m);
                         g.xrect(room.w/2,this.y-change/2,this.z,this.h*m-change,this.d*m);
-                        
+
                     }
                 } else {
                     g.xrect(-room.w/2,this.y,this.z,this.h*m,this.d*m);
@@ -640,9 +640,9 @@ var particle = function(){
             this.stage = 0;
             this.hue = random(255);
         },
-        
+
     };
-}; 
+};
 var particles = [];
 //}
 
@@ -715,7 +715,7 @@ Player.prototype.control = function(){
         } if(keys.s){
             this.cvy+=0.5;
         }
-        
+
     } else {
         print("Invalid movement mode");
     }
@@ -723,12 +723,12 @@ Player.prototype.control = function(){
 Player.prototype.update = function(){
     this.cx+=this.cvx*speedMultiplyer;
     this.cy+=this.cvy*speedMultiplyer;
-        
+
     this.cvx*=0.9;
     this.cvy*=0.9;
     this.x = lerp(this.x,this.cx,0.075*speedMultiplyer);
     this.y = lerp(this.y,this.cy,0.075*speedMultiplyer);
-    
+
     if(this.cx-this.w/2<-room.w/2){
         this.cx = max(-room.w/2+this.w/2,this.cx);
         this.cvx = 0;
@@ -741,7 +741,7 @@ Player.prototype.update = function(){
     } else if(this.cy+this.h/2>room.h/2){
         this.cy = min(room.h/2-this.h/2,this.cy);
         this.cvy = 0;
-    } 
+    }
 };
 Player.prototype.run = function(){
     this.displaySelf();
@@ -835,27 +835,27 @@ var Slider = function(label,x,y,w,h,thumbnailWidth,percent,min,max){
 };
 Slider.prototype.display = function(){
     var uic = UIColoring;
-    
+
     stroke(uic.text);
     strokeWeight(1);
     fill(uic.text);
     drawText(""+round(this.min),this.x,this.y-this.h,uic.smallSize);
     drawText(""+round(this.max),this.x+this.w,this.y-this.h,uic.smallSize);
     drawText(""+round(this.value),this.x+this.w/2,this.y-this.h,uic.smallSize);
-    
+
     textSize(uic.mediumSize);
     drawText(""+this.label,this.x+this.w/2,this.y+this.h+5,uic.mediumSize);
-    
+
     fill(uic.fill);
     stroke(uic.stroke);
     strokeWeight(uic.weight);
     rect(this.x,this.y+2,this.w,this.h-4,2);
-    
+
     fill(uic.selected);
     rect(this.t-this.tw/2,this.y,this.tw,this.h,2);
 };
 Slider.prototype.update = function(){
-    
+
     if(mouseX>this.t-this.tw/2&&mouseX<this.t+this.tw/2&&mouseY>this.y&&mouseY<this.y+this.h){
         cursor(HAND);
         if(pressed){
@@ -870,11 +870,11 @@ Slider.prototype.update = function(){
         }
         this.t = mouseX;
     }
-    
+
     this.t = constrain(this.t,this.x,this.x+this.w);
-    
+
     this.value = map(this.t,this.x,this.x+this.w,this.min,this.max);
-    
+
 };
 Slider.prototype.get = function(){
     this.update();
@@ -1097,24 +1097,24 @@ var paused = function(){
     }
 };
 var AIBackground = function(){
-    
+
     return function(){
         updateAll(menuAI1,menuAI2);
-        
+
         g.background(150, 50,220);
         push();
         translate(width/2,height/2);
-        
+
         g.pushMatrix();
         menuAI1.setMatrix();
-        
+
         displayAll(menuAI1,menuAI2);
-        
+
         g.popMatrix();
         g.draw();
-        
+
         pop();
-        
+
 			  // if(!detectmob()){
             // blur(0,0,width,height,2);
 				// }
@@ -1147,60 +1147,60 @@ var menu = function(){
     scores.goToScore = pointsSlider.get();
 };
 var game = function(){
-    
+
     updateAll(player,player2);
-    
+
     if(playerMode==="single"){
         g.background(150, 50,220);
         push();
-        
+
         translate(width/2,height/2);
         player.setMatrix();
-        
+
         displayAll(player,player2);
-        
+
         g.popMatrix();
         g.draw();
         pop();
     } else {
         push();
         translate(width/4,height/2);
-        
+
         g.background(150, 50,220);
         player.setMatrix();
-        
+
         displayAll(player,player2);
-        
+
         g.popMatrix();
         g.draw();
-        
+
         pop();
         var player1Image = get(0,0,width/2,height);
-        
+
         push();
         translate(width/4,height/2);
-        
+
         g.background(150, 50,220);
         player2.setMatrix();
-        
+
         displayAll(player,player2);
-        
+
         g.popMatrix();
         g.draw();
-        
+
         pop();
         var player2Image = get(0,0,width/2,height);
-        
-        
+
+
         image(player1Image,0,0,width/2,height);
         image(player2Image,width/2,0,width/2,height);
         stroke(0);
         strokeWeight(3);
         line(width/2,-10,width/2,height+10);
     }
-    
+
     scores.display();
-    
+
     fill(255);
     strokeWeight(1);
     stroke(255);
@@ -1258,7 +1258,7 @@ var won = function(){
 //}
 
 draw = function() {
-    
+
     if(frameRate()<10){
         frameCount--;
         cursor('wait');
@@ -1266,12 +1266,12 @@ draw = function() {
     } else {
         cursor("default");
     }
-    
+
     switch(scene){
         default:
             menu();
         break;
-        case "game": 
+        case "game":
             game();
         break;
         case "graphics":
@@ -1284,19 +1284,8 @@ draw = function() {
             won();
         break;
     }
-    
+
     clicked = false;
     pressed = false;
-    
+
 };
-
-
-
-
-
-
-
-
-
-
-
