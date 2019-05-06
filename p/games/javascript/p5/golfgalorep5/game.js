@@ -6,7 +6,8 @@ function preload(){
 };
 
 function setup(){
-	createCanvas(windowWidth, windowHeight);
+	var canvas = createCanvas(windowWidth, windowHeight);
+	canvas.parent('game');
 	frameRate(50);
 	smooth();
 	//angleMode(RADIANS);
