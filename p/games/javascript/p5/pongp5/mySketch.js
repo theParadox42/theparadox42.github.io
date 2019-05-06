@@ -21,7 +21,8 @@
 */
 var pauseImage;
 function setup(){
-	createCanvas(windowWidth, windowHeight);
+	var canvas = createCanvas(windowWidth, windowHeight);
+	canvas.parent('game');
 	colorMode(HSB, 255, 255, 255, 255);
 	pauseImage = get();
 	angleMode(DEGREES);
