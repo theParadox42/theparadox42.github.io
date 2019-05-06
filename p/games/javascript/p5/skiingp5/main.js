@@ -59,7 +59,7 @@ function setup() {
 	}
 
 
-	let canvas = createCanvas(1000,windowHeight);
+	let canvas = createCanvas(1000,windowHeight-30);
 	canvas.parent('game');
 	frameRate(40);
 	cameraX = width/2;
