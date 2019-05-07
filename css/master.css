@@ -45,7 +45,6 @@ a, a:visited, a:hover,
 .no-bullets {
     list-style: none;
 }
-.game-card {
-    width: 40%;
-    margin: 5%;
+.network-container {
+    width: 100%;
 }
