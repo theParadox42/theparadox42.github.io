@@ -685,6 +685,26 @@ Player.prototype.control = function(){
     if(this.cz>this.z){
         xs *= -1;
     }
+	if(detectmob()&&mouseIsPressed){
+			 if(mouseX<100){
+				 if(mouseY<100){
+					 this.cvx-=xs;
+					 this.cvy-=0.5;
+				 } else if(mouseY>height-100){
+					 this.cvx-=xs;
+					 this.cvy+=0.5;
+				 }
+			 } else if(mouseX>width-100){
+			    if(mouseY<100){
+						this.cvx+=xs;
+						this.cvy-=0.5;
+					} else if(mouseY>height-100){
+						this.cvx+=xs;
+						this.cvy+=0.5;
+					}
+		   }
+			 return true;
+		}
     if(this.mode==="all"){
         if(keys.d||keys[RIGHT_ARROW]){
             this.cvx+=xs;
@@ -1212,6 +1232,18 @@ var game = function(){
             clicked = false;
         }
     }
+	
+	if(detectmob()){
+		push();
+		fill(0, 0, 0, 128);
+		strokeWeight(5);
+     	stroke(0, 0, 0, 200);
+		rect(0, 0, 100, 100);
+		rect(0, height-100, 100, 100);
+		rect(width-100, height-100, 100, 100);
+		rect(width-100, 0, 100, 100);
+		pop();
+	}
 };
 var setGraphics = function(){
     AIBackground();
