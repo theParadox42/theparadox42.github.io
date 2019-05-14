@@ -28,3 +28,8 @@ a:hover {
     align-items: center;
     position: absolute;
 }
+canvas {
+    position: fixed;
+    left: 0;
+    top: 0;
+}
