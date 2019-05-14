@@ -31,5 +31,5 @@ a:hover {
 canvas {
     position: fixed;
     left: 0;
-    top: 0;
+    top: 30px;
 }
