@@ -12,6 +12,9 @@ p {
     font-family: arial;
     font-size: 15px;
     height: 20px;
+    position: fixed;
+    left: 0;
+    top: 0;
 }
 a {
     color: rgb(0,160,200);
