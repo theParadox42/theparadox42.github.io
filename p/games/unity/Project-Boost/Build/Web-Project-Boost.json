@@ -1,0 +1,16 @@
+{
+"companyName": "paradox42",
+"productName": "Project Boost",
+"productVersion": "1.1",
+"dataUrl": "Web-Project-Boost.data.unityweb",
+"wasmCodeUrl": "Web-Project-Boost.wasm.code.unityweb",
+"wasmFrameworkUrl": "Web-Project-Boost.wasm.framework.unityweb",
+"graphicsAPI": ["WebGL 2.0","WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#1A2F4B",
+"cacheControl": {"default": "must-revalidate"},
+"developmentBuild": false,
+"multithreading": false,
+"unityVersion": "2019.1.7f1"
+}
