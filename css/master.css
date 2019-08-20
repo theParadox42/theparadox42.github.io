@@ -13,7 +13,7 @@ html, body {
 }
 body {
     background-color: #f8f9fa;
-    padding-top: 56px;
+    padding-top: 104px;
 }
 header {
     max-height: 300px;
@@ -21,8 +21,6 @@ header {
     overflow: hidden;
 }
 #navbar {
-    position: fixed;
-    height: 55px;
     z-index: 1;
 }
 .bg-coolblue, #navbar {
