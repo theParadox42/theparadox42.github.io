@@ -21,27 +21,28 @@
                 Either fill out the form below, or click <a href="mailto:contact@paradox42.me">here</a> to write a personal email.
             </p>
             <p>
-                <form name="message" method="GET" action="./submitted" data-netlify="true">
-                    <p>
-                        <label>Name: <input type="text" name="name" placeholder="Enter Your Name Here" required/></label>
-                    </p>
-                    <p>
-                        <label>Your Email: <input type="email" name="email" placeholder="Enter Your Email Here" equired/></label>
-                        <div class="find">
-
-                        </div>
-                    </p>
-                    <p>
+                <form method="GET" action="submitted" data-netlify="true">
+                    <div class="form-group">
+                        <label for="nameInput">Name</label>
+                        <input type="text" class="form-control" id="nameInput" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="emailInput">Email address</label>
+                        <input type="email" class="form-control" id="emailInput" aria-describedby="emailHelp" placeholder="Enter email" required>
+                        <small id="emailHelp" class="form-text text-muted">We <em>only</em> use your email for messaging you back.</small>
+                    </div>
+                    <div class="form-group">
                         <label for="messagebox">Message:</label>
-                        <br>
-                        <textarea rows="5" cols="20" name="message" id="messagebox" required></textarea>
-                    </p>
+                        <textarea rows="3" name="message" id="messagebox" class="form-control" required></textarea>
+                    </div>
                     <p>
-                        <button type="submit">Submit</button>
+                        <button type="submit" class="btn btn-primary">Submit</button>
                     </p>
                 </form>
             </p>
-            <a href="/">Home</a>
+            <p>
+                Or just go <a href="/">home</a>
+            </p>
         </div>
     </section>
 
