@@ -1,3 +1,3 @@
-# PARADOX42.TK
+# PARADOX42.TECH
 
-Just a website I'm developing, visit it [here](https://paradox42.tk). Bootstrap finished being added in. I think it looks _real_ nice if you ask me __:D__
+The source code for my static website. It's hosted through [Netlify](https://netlify.com) and [.tech domains](https://get.tech). You can visit it [here](https://paradox42.tech). Domain updates are finished.
