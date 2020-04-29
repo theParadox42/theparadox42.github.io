@@ -420,13 +420,13 @@ var generateStar = function(type,starAmount,distance,i){
     var star = {};
     var randomColor = colors[floor(random(colors.length))];
     var randomSize = random(10,100);
+    var mag;
     switch(type){
 
         //Tube{
         case "tube":
             var r = random(TWO_PI);
             var m = random(random(random(random(200000))));
-            var s = random(50);
             star = {
                 x: cos(r)*m,
                 y: sin(r)*m,
@@ -440,7 +440,7 @@ var generateStar = function(type,starAmount,distance,i){
         case "sphere":
             var rx = random(TWO_PI);
             var ry = random(TWO_PI);
-            var mag = random(random(distance),distance);
+            mag = random(random(distance),distance);
             star = {
                 x: cos(ry)*mag*sin(rx),
                 y: cos(rx)*mag,
@@ -452,7 +452,7 @@ var generateStar = function(type,starAmount,distance,i){
         case "sphere-center":
             var rx = random(TWO_PI);
             var ry = random(TWO_PI);
-            var mag = random(0,random(distance));
+            mag = random(0,random(distance));
             star = {
                 x: cos(ry)*mag*sin(rx),
                 y: cos(rx)*mag,
@@ -464,7 +464,7 @@ var generateStar = function(type,starAmount,distance,i){
         case "sphere-outer":
             var rx = random(TWO_PI);
             var ry = random(TWO_PI);
-            var mag = random(random(random(distance),distance),distance);
+            mag = random(random(random(distance),distance),distance);
             star = {
                 x: cos(ry)*mag*sin(rx),
                 y: cos(rx)*mag,
@@ -476,7 +476,7 @@ var generateStar = function(type,starAmount,distance,i){
         case "outline":
             var rx = random(TWO_PI);
             var ry = random(TWO_PI);
-            var mag = random(distance+5,distance-5);
+            mag = random(distance+5,distance-5);
             star = {
                 x: cos(ry)*mag*sin(rx),
                 y: cos(rx)*mag,
@@ -490,7 +490,7 @@ var generateStar = function(type,starAmount,distance,i){
         case "infinite":
             var rx = random(TWO_PI);
             var ry = random(TWO_PI);
-            var mag = random(random(distance),distance);
+            mag = random(random(distance),distance);
             star = {
                 x: cos(ry)*mag*sin(rx),
                 y: cos(rx)*mag,
@@ -509,7 +509,7 @@ var generateStar = function(type,starAmount,distance,i){
             var r = i*(TWO_PI/bands)+random(0,random(0,random(0,random())))*positive;
 
 
-            var mag = random(0,random(distance/2,distance));
+            mag = random(0,random(distance/2,distance));
             var dfc = 0;//distance from center
 
             var multiplyer = distance/10000;

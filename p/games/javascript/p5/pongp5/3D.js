@@ -269,7 +269,7 @@ var g = {
         var point1 = this.r(x1,y1,z1);
         var point2 = this.r(x2,y2,z2);
         var point3 = this.r(x3,y3,z3);
-        var c = {x:(point1.X+point2.X+point3.X)/3,y:(point1.Y+point2.Y+point3.Y)/3,z:(point1.Z+point2.Z,point3.Z)/3};
+        var c = {x:(point1.X+point2.X+point3.X)/3,y:(point1.Y+point2.Y+point3.Y)/3,z:(point1.Z+point2.Z+point3.Z)/3};
         var points = [point1,point2,point3];
         this.shapes.push({type: "triangle", points: points,stats:this.minAvgMax(points),color: this.getColor()});
     },
