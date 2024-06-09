@@ -13,7 +13,7 @@ html, body {
 }
 body {
     background-color: #f8f9fa;
-    padding-top: 104px;
+    padding-top: 52px;
 }
 header {
     max-height: 300px;
@@ -24,7 +24,7 @@ header {
     z-index: 1;
 }
 .bg-coolblue, #navbar {
-    background-color: #065471!important;
+    background-color: #0e2a34!important;
 }
 a, a:visited, a:hover,
 .text-coolblue {
