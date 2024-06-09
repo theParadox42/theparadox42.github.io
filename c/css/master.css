@@ -1,6 +1,6 @@
 /* Bootstrap */
-@import "/css/animations.css";
-@import url("/assets/libraries/bootstrap/css/bootstrap.min.css");
+@import "/p/css/animations.css";
+@import url("/c/css/bootstrap/bootstrap.min.css");
 /* Navbar Font, from Google Fonts */
 @import url("https://fonts.googleapis.com/css?family=ZCOOL+QingKe+HuangYou");
 /* Font Awesome */

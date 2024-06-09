@@ -15,7 +15,7 @@ function loadScript(url, callback) {
 };
 function doneLoading(){
     var $nav = $('#navbar');
-    $nav.load("/html-templates/navcontents.html", function(){
+    $nav.load("/c/html/navcontents.html", function(){
         $nav.css("height","0px")
         if(active){
             var $active = $('#' + active);
@@ -25,9 +25,9 @@ function doneLoading(){
     });
 };
 function loadBootstrap(){
-    loadScript("/assets/libraries/bootstrap/js/bootstrap.min.js",doneLoading);
+    loadScript("/c/js/libraries/bootstrap/js/bootstrap.min.js",doneLoading);
 };
 function loadPopper() {
-    loadScript("/assets/libraries/popper.min.js", loadBootstrap);
+    loadScript("/c/js/libraries/popper.min.js", loadBootstrap);
 };
-loadScript("/assets/libraries/jquery-3.4.0.min.js", loadPopper);
+loadScript("/c/js/libraries/jquery-3.4.0.min.js", loadPopper);
